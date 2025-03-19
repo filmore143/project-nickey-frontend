@@ -104,10 +104,22 @@ export default {
     options() {
       return this.currentQuestion
         ? [
-            { letter: "A", text: this.currentQuestion.option_a },
-            { letter: "B", text: this.currentQuestion.option_b },
-            { letter: "C", text: this.currentQuestion.option_c },
-            { letter: "D", text: this.currentQuestion.option_d },
+            {
+              letter: `${this.currentQuestion.option_a}`,
+              text: this.currentQuestion.option_a,
+            },
+            {
+              letter: `${this.currentQuestion.option_b}`,
+              text: this.currentQuestion.option_b,
+            },
+            {
+              letter: `${this.currentQuestion.option_c}`,
+              text: this.currentQuestion.option_c,
+            },
+            {
+              letter: `${this.currentQuestion.option_d}`,
+              text: this.currentQuestion.option_d,
+            },
           ]
         : [];
     },
